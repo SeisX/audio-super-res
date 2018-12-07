@@ -59,12 +59,12 @@ if __name__ == "__main__":
     Y = SubPixel1D(X, 2)
     y = sess.run(Y, feed_dict={X: x})
 
-    print 'single-channel:'
-    print 'original, element 0 (2 channels):', x[0,:,0], x[0,:,1]
-    print 'rescaled, element 1:', y[0,:,0]
+    print ('single-channel:')
+    print ('original, element 0 (2 channels):', x[0,:,0], x[0,:,1])
+    print ('rescaled, element 1:', y[0,:,0])
     print
-    print 'original, element 0 (2 channels) :', x[1,:,0], x[1,:,1]
-    print 'rescaled, element 1:', y[1,:,0]
+    print ('original, element 0 (2 channels) :', x[1,:,0], x[1,:,1])
+    print ('rescaled, element 1:', y[1,:,0])
     print
 
     x = np.arange(2*4*4).reshape(2, 4, 4)
@@ -72,9 +72,9 @@ if __name__ == "__main__":
     Y = SubPixel1D(X, 2)
     y = sess.run(Y, feed_dict={X: x})
 
-    print 'multichannel:'
-    print 'original, element 0 (4 channels):', x[0,:,0], x[0,:,1], x[0,:,2], x[0,:,3]
-    print 'rescaled, element 1:', y[0,:,0], y[0,:,1]
+    print ('multichannel:')
+    print ('original, element 0 (4 channels):', x[0,:,0], x[0,:,1], x[0,:,2], x[0,:,3])
+    print ('rescaled, element 1:', y[0,:,0], y[0,:,1])
     print
-    print 'original, element 0 (2 channels) :', x[1,:,0], x[1,:,1], x[1,:,2], x[1,:,3]
-    print 'rescaled, element 1:', y[1,:,0], y[1,:,1],
+    print ('original, element 0 (2 channels) :', x[1,:,0], x[1,:,1], x[1,:,2], x[1,:,3])
+    print ('rescaled, element 1:', y[1,:,0], y[1,:,1],)

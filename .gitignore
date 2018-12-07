@@ -1,3 +1,6 @@
 .DS_Store
 sftp-config.json
 *.pyc
+data/vctk/VCTK-Corpus.tar
+data/vctk/VCTK-Corpus/
+data/vctk/speaker1/*.h5
